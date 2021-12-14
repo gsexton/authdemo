@@ -18,7 +18,7 @@ What we will evaluate
 * Your approach to solution design and coding best practices
 * Your coding-style
 
-## Requirements
+## Software Requirements
 
 * Apache Maven - I used 3.8.4
 * JDK - I used Azul JDK 1.8 build 312.
