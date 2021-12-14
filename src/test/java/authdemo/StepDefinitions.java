@@ -54,11 +54,10 @@ public class StepDefinitions {
         assertNotNull(account);
         AuthenticationProvider ap = new AuthenticationProviderImpl(getDefaultPolicy());
         try {
-            ap.verifyLoginPreconditions(account);
             result = ap.verifyPassword(account, password);
-            ap.postLogin(account, result);
         } catch (AuthenticationException ae) {
             // ignore
+            result = false;
         }
     }
 
